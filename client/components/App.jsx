@@ -7,6 +7,7 @@ import Form from './Form'
 
 function App() {
   const [outfits, setOutfits] = useState(data)
+  console.log(outfits)
 
   return (
     <main className="mainApp">
@@ -17,11 +18,12 @@ function App() {
         <div className="mainInnerDiv">
           <Routes>
             <Route path="/" element={<List outfits={outfits} />} />
-            <Route
+            {/* <Route
               path="/add"
               element={<Form outfits={outfits} setOutfits={setOutfits} />}
-            />
+            /> */}
           </Routes>
+          <List />
         </div>
       </div>
     </main>
