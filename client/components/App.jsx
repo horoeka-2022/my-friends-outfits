@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 import data from '../data'
 import List from './List'
@@ -10,14 +10,12 @@ function App() {
   console.log(outfits)
 
   return (
-    <main className="bg-blue-900 w-screen h-screen flex justify-center items-center">
-      <div className="mx-auto ">
-        <header className="mb-20">
-          <h1 className="text-center text-white text-3xl">
-            My Friend's Outfits
-          </h1>
+    <main className="mainApp">
+      <div className="mainOuterDiv">
+        <header className="mainHeader">
+          <h1 className="mainH1">My Friends Outfits</h1>
         </header>
-        <div className="flex flex-col space-x-2 justify-center">
+        <div className="mainInnerDiv">
           <Routes>
             <Route path="/" element={<List outfits={outfits} />} />
             {/* <Route
