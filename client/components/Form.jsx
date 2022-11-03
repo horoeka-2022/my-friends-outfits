@@ -63,12 +63,15 @@ function Form(props) {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <section className="flex flex-col gap-4">
+      <section className="formSection">
         <input type="text" name="name" placeholder="Name" required={true} />
         <h2> Pick your Top!</h2>
         <div>
-          <input type="checkbox" id="redtop" name="top" value="redtop" />
-          <label htmlFor="redtop">Red Top</label>
+          <input type="checkbox" id="tops1" name="top" value="tops1" />
+          <label htmlFor="tops1">
+            <img src={'/Images/tops1.png'} alt="tops1" />
+            Red Top
+          </label>
         </div>
         <div>
           <input type="checkbox" id="bluetop" name="top" value="bluetop" />

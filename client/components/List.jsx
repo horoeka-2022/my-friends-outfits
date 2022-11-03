@@ -7,7 +7,7 @@ function List(props) {
       <Link to="/add">Add New Outfit</Link>
       <ul>
         {props.outfits.map((outfit) => (
-          <li key={outfit.id} className="p-4 m-4 bg-white shadow-lg">
+          <li key={outfit.id}>
             <p>{outfit.name}</p>
             <p>{outfit.top}</p>
             <p>{outfit.bottom}</p>
