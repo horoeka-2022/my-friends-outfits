@@ -100,10 +100,11 @@ list {
   height: auto;
 }
 
-.name {
+.listName {
   font-family: 'Creepster', cursive;
   color: yellow;
   font-size: 2em;
+  justify-content: center;
 }
 
 h2 {

@@ -10,7 +10,7 @@ function List(props) {
         <div key={outfit.id} className="imgDiv">
           <img className="top" src={outfit.top} alt="top"></img>
           <img className="bottom" src={outfit.bottom} alt="bottom"></img>
-          <p className="name">{outfit.name}</p>
+          <p className="listName">{outfit.name}</p>
         </div>
       ))}
     </>
