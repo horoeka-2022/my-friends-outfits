@@ -42,12 +42,8 @@ function Form(props) {
     // const testArray = topArray.map((top) => (console.log(top.checked))
 
     const name = event.currentTarget.elements.name.value
-
     const top = event.currentTarget.elements.top[topChoiceIdx].value
-
     const bottom = event.currentTarget.elements.bottom[bottomChoiceIdx].value
-
-    // props.outfits[0].id
 
     const newOutfit = {
       id: props.outfits.length + 1,
@@ -55,14 +51,12 @@ function Form(props) {
       top,
       bottom,
     }
-
     // add a new book to the state
     props.setOutfits((state) => [...state, newOutfit])
 
     // to clear the form
     event.target.reset()
-
-    navigate('/add')
+    navigate('/')
   }
 
   // if(typeof props.outfits[field] == 'function') continue;
@@ -72,53 +66,54 @@ function Form(props) {
       <section className="formSection">
         <input type="text" name="name" placeholder="Name" required={true} />
         <h2> Pick your Top!</h2>
-
-        {tops.map((top) => {
-          return (
-            <>
-              <div key={top.description}>
-                <input
-                  type="checkbox"
-                  id={top.id}
-                  name={top.description}
-                  value={top.description}
-                />
-                <label htmlFor={top.description}>
-                  <img
-                    className="imageChoice"
-                    src={top.path}
-                    alt={top.description}
+        <div className="choiceDiv">
+          {tops.map((top) => {
+            return (
+              <>
+                <div key={top.path}>
+                  <input
+                    type="checkbox"
+                    id={top.id}
+                    name="top"
+                    value={top.path}
                   />
-                </label>
-              </div>
-            </>
-          )
-        })}
-
+                  <label htmlFor={top.path}>
+                    <img
+                      className="imageChoice"
+                      src={top.path}
+                      alt={top.description}
+                    />
+                  </label>
+                </div>
+              </>
+            )
+          })}
+        </div>
         <h2> Pick your Bottom!</h2>
-
-        {bottoms.map((bottom) => {
-          console.log(bottom.path)
-          return (
-            <>
-              <div key={top.description}>
-                <input
-                  type="checkbox"
-                  id={bottom.id}
-                  name={bottom.description}
-                  value={bottom.description}
-                />
-                <label htmlFor={bottom.description}>
-                  <img
-                    className="imageChoice"
-                    src={bottom.path}
-                    alt={bottom.description}
+        <div className="choiceDiv">
+          {bottoms.map((bottom) => {
+            // console.log(bottom.path)
+            return (
+              <>
+                <div key={top.path}>
+                  <input
+                    type="checkbox"
+                    id={bottom.id}
+                    name="bottom"
+                    value={bottom.path}
                   />
-                </label>
-              </div>
-            </>
-          )
-        })}
+                  <label htmlFor={bottom.path}>
+                    <img
+                      className="imageChoice"
+                      src={bottom.path}
+                      alt={bottom.description}
+                    />
+                  </label>
+                </div>
+              </>
+            )
+          })}
+        </div>
 
         <Button>Add</Button>
       </section>

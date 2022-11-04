@@ -46,10 +46,16 @@ button {
 }
 
 .formSection {
+  
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
+ 
+}
 
+.choiceDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 list {
@@ -63,6 +69,7 @@ list {
 
   height: 100px;
   width: 100px;
+}
   
 .imgDiv {
   display: flex;
