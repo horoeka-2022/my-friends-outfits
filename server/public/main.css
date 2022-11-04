@@ -105,9 +105,11 @@ list {
   color: yellow;
   font-size: 2em;
   justify-content: center;
+  text-shadow: 4px 4px black;
 }
 
 h2 {
+  font-family: 'Kaisei Decol', serif;
   text-align: center;
   font-size: 30px;
 }
