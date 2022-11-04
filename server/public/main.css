@@ -64,4 +64,13 @@ list {
   height: 100px;
   width: 100px;
   
+.imgDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clothing {
+  max-width: 20%;
+  height: auto;
 }

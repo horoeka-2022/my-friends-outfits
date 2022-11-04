@@ -15,7 +15,7 @@ export default [
     id: 3,
     name: 'DJ No Carbs',
     top: 'Images/tops12.png',
-    bottom: 'Images/botttoms5.png',
+    bottom: 'Images/bottoms5.png',
   },
   {
     id: 4,
