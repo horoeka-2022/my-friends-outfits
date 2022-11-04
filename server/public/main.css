@@ -42,7 +42,7 @@ background: linear-gradient(90deg, rgba(154,0,255,1) 0%, rgba(0,255,4,1) 50%, rg
 button {
   display: inline-block;
   padding: 10px;
-  padding-bottom: 100px;
+  margin-bottom: 50px;
   background-color: darkorange;
   font-family: 'Bungee Shade', cursive;
   color: white;
