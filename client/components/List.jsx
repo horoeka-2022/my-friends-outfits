@@ -6,10 +6,6 @@ function List(props) {
   console.log(props)
   return (
     <>
-      <Button>
-        <Link to="/add">Add New Outfit</Link>
-      </Button>
-
       {props.outfits.map((outfit) => (
         <div key={outfit.id} className="imgDiv">
           <img className="top" src={outfit.top} alt="top"></img>
