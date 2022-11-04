@@ -1,7 +1,5 @@
 .mainApp {
   background-color: blue;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +21,8 @@
 
 .mainInnerDiv {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-left: 0.5rem;
   justify-content: center;
 }
@@ -63,9 +62,16 @@ list {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 40%;
+  height: 40%;
 }
 
-.clothing {
-  max-width: 20%;
+.top {
+  max-width: 30%;
+  height: auto;
+}
+
+.bottom {
+  max-width: 30%;
   height: auto;
 }

@@ -22,7 +22,7 @@ export default [
   {
     id: 5,
     description: 'Lime Green Capris',
-    path: 'Images/botttoms5.png',
+    path: 'Images/bottoms5.png',
   },
   {
     id: 6,
