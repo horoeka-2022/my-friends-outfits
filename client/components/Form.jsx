@@ -64,7 +64,16 @@ function Form(props) {
   return (
     <form onSubmit={handleSubmit}>
       <section className="formSection">
-        <input type="text" name="name" placeholder="Name" required={true} />
+        <h2>What is your Name?</h2>
+        <div className="name">
+          <input
+            className="nameInput"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required={true}
+          />
+        </div>
         <h2> Pick your Top!</h2>
         <div className="choiceDiv">
           {tops.map((top) => {
