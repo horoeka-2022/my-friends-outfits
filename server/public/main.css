@@ -59,6 +59,11 @@ list {
   box-shadow: 0 10px 15px -3px black, 0 4px 6px -4px black;
 }
 
+.imageChoice {
+
+  height: 100px;
+  width: 100px;
+  
 .imgDiv {
   display: flex;
   flex-direction: column;

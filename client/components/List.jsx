@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 function List(props) {
   console.log(props)
-
   return (
     <>
       <Link to="/add">Add New Outfit</Link>
