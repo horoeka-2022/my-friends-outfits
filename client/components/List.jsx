@@ -8,9 +8,9 @@ function List(props) {
       <Link to="/add">Add New Outfit</Link>
       {props.outfits.map((outfit) => (
         <div key={outfit.id} className="imgDiv">
+          <img className="top" src={outfit.top} alt="top"></img>
+          <img className="bottom" src={outfit.bottom} alt="bottom"></img>
           <p>{outfit.name}</p>
-          <img className="clothing" src={outfit.top} alt="top"></img>
-          <img className="clothing" src={outfit.bottom} alt="bottom"></img>
         </div>
       ))}
     </>
