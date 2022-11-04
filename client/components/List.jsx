@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Button from './Button'
 
 function List(props) {
   console.log(props)
   return (
     <>
-      <Link to="/add">Add New Outfit</Link>
+      <Button>
+        <Link to="/add">Add New Outfit</Link>
+      </Button>
 
       {props.outfits.map((outfit) => (
         <div key={outfit.id} className="imgDiv">
