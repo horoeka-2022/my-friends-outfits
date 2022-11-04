@@ -55,13 +55,13 @@ button {
   
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
  
 }
 
 .choiceDiv {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 150px);
 }
 
 list {
@@ -69,6 +69,13 @@ list {
   margin: 4px;
   background-color: white;
   box-shadow: 0 10px 15px -3px black, 0 4px 6px -4px black;
+}
+
+.name {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
 }
 
 .imageChoice {
@@ -99,4 +106,15 @@ list {
   font-family: 'Creepster', cursive;
   color: yellow;
   font-size: 2em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.nameInput {
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
 }
