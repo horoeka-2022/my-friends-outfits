@@ -1,3 +1,5 @@
+
+
 .mainApp {
   background-color: blue;
   display: flex;
@@ -16,7 +18,9 @@
 .mainH1 {
   text-align: center;
   color: white;
-  font-size: 50px;
+  font-size: 5em;
+  font-family: 'Nabla', cursive;
+  
 }
 
 .mainInnerDiv {
@@ -28,6 +32,7 @@
 }
 
 .buttonDiv {
+  font-family: 'Bungee Shade', cursive;
   display: flex;
   margin-left: 0.25rem;
   justify-content: center;
@@ -62,6 +67,7 @@ list {
 
   height: 100px;
   width: 100px;
+}
   
 .imgDiv {
   display: flex;
@@ -79,4 +85,10 @@ list {
 .bottom {
   max-width: 30%;
   height: auto;
+}
+
+.name {
+  font-family: 'Creepster', cursive;
+  color: yellow;
+  font-size: 2em;
 }
